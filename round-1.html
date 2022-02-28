@@ -9,59 +9,84 @@
   </head>
   <body>
     <header>
-      <h1>First Round</h1>
-      <h2>Player Turn</h2>
+      <h1 id="header">Jeopardy</h1>
     </header>
     <main>
-      <!-- grid components needed for game board-->
-      <div class="gameboard">
-        <!-- catagory header on grid -->
-        <div class="category a">Category</div>
-        <div class="category b">Category</div>
-        <div class="category c">Category</div>
-        <div class="category d">Category</div>
-        <div class="category e">Category</div>
-        <div class="category f">Category</div>
-        <!-- row 100 -->
-        <div class="question q1">100</div>
-        <div class="question q2">100</div>
-        <div class="question q3">100</div>
-        <div class="question q4">100</div>
-        <div class="question q5">100</div>
-        <div class="question q6">100</div>
-        <!-- row 200 -->
-        <div class="question q7">200</div>
-        <div class="question q8">200</div>
-        <div class="question q9">200</div>
-        <div class="question q10">200</div>
-        <div class="question q11">200</div>
-        <div class="question q12">200</div>
-        <!-- row 300 -->
-        <div class="question q13">300</div>
-        <div class="question q14">300</div>
-        <div class="question q15">300</div>
-        <div class="question q16">300</div>
-        <div class="question q17">300</div>
-        <div class="question q18">300</div>
-        <!-- row 400 -->
-        <div class="question q19">400</div>
-        <div class="question q20">400</div>
-        <div class="question q21">400</div>
-        <div class="question q22">400</div>
-        <div class="question q23">400</div>
-        <div class="question q24">400</div>
-        <!-- row 500 -->
-        <div class="question q25">500</div>
-        <div class="question q26">500</div>
-        <div class="question q27">500</div>
-        <div class="question q28">500</div>
-        <div class="question q29">500</div>
-        <div class="question q30">500</div>
-      </div>
-
-      <!-- <section class="userinput"></section>
-      <section class="score"></section> -->
-      <!-- <footer>Footer Site Information</footer> -->
+      <h1 id="title">First Round</h1>
+      <section id="turn">
+        <h2>Player Turn</h2>
+      </section>
+      <!-- components needed for game board-->
+      <section class="gameboard">
+        <!-- Column 1 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R1100">100</button></div>
+          <div class="question"><button type="button" class="R1200">200</button></div>
+          <div class="question"><button type="button" class="R1300">300</button></div>
+          <div class="question"><button type="button" class="R1400">400</button></div>
+          <div class="question"><button type="button" class="R1500">500</button></div>
+        </section>
+        <!-- Column 2 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R1100">100</button></div>
+          <div class="question"><button type="button" class="R1200">200</button></div>
+          <div class="question"><button type="button" class="R1300">300</button></div>
+          <div class="question"><button type="button" class="R1400">400</button></div>
+          <div class="question"><button type="button" class="R1500">500</button></div>
+        </section>
+        <!-- Column 3 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R1100">100</button></div>
+          <div class="question"><button type="button" class="R1200">200</button></div>
+          <div class="question"><button type="button" class="R1300">300</button></div>
+          <div class="question"><button type="button" class="R1400">400</button></div>
+          <div class="question"><button type="button" class="R1500">500</button></div>
+        </section>
+        <!-- Column 4 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R1100">100</button></div>
+          <div class="question"><button type="button" class="R1200">200</button></div>
+          <div class="question"><button type="button" class="R1300">300</button></div>
+          <div class="question"><button type="button" class="R1400">400</button></div>
+          <div class="question"><button type="button" class="R1500">500</button></div>
+        </section>
+        <!-- Column 5 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R1100">100</button></div>
+          <div class="question"><button type="button" class="R1200">200</button></div>
+          <div class="question"><button type="button" class="R1300">300</button></div>
+          <div class="question"><button type="button" class="R1400">400</button></div>
+          <div class="question"><button type="button" class="R1500">500</button></div>
+        </section>
+        <!-- Column 6 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R1100">100</button></div>
+          <div class="question"><button type="button" class="R1200">200</button></div>
+          <div class="question"><button type="button" class="R1300">300</button></div>
+          <div class="question"><button type="button" class="R1400">400</button></div>
+          <div class="question"><button type="button" class="R1500">500</button></div>
+        </section>
+      </section>
+      <section class="userinput">
+        <input type="text" id="answer" name="answer" />
+        <button type="button" id="guess">Guess</button>
+        <button type="button" id="pass">Pass</button>
+      </section>
+      <section class="score">
+        <!-- Need to have functionality for gameplay once JavaScript added -->
+        <div id="player1">Player One Score: 0</div>
+        <div id="player2">Player Two Score: 0</div>
+      </section>
+      <form action="round-2.html">
+      <button id="next">Next Round</button>
+      </form>
+      <footer><p>Footer Site Information</p></footer>
     </main>
   </body>
 </html>
