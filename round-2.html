@@ -1,67 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="Styles/stylerounds.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy-Round2</title>
-</head>
-<body>
-  <header>
-    <h1>Second Round</h1>
-    <h2>Player Turn</h2>
-  </header>
-  <main>
-    <!-- grid components needed for game board-->
-    <div class="gameboard">
-      <!-- catagory header on grid -->
-      <div class="category a">Category</div>
-      <div class="category b">Category</div>
-      <div class="category c">Category</div>
-      <div class="category d">Category</div>
-      <div class="category e">Category</div>
-      <div class="category f">Category</div>
-      <!-- row 200 -->
-      <div class="question q1">200</div>
-      <div class="question q2">200</div>
-      <div class="question q3">200</div>
-      <div class="question q4">200</div>
-      <div class="question q5">200</div>
-      <div class="question q6">200</div>
-      <!-- row 400 -->
-      <div class="question q7">400</div>
-      <div class="question q8">400</div>
-      <div class="question q9">400</div>
-      <div class="question q10">400</div>
-      <div class="question q11">400</div>
-      <div class="question q12">400</div>
-      <!-- row 600 -->
-      <div class="question q13">600</div>
-      <div class="question q14">600</div>
-      <div class="question q15">600</div>
-      <div class="question q16">600</div>
-      <div class="question q17">600</div>
-      <div class="question q18">600</div>
-      <!-- row 800 -->
-      <div class="question q19">800</div>
-      <div class="question q20">800</div>
-      <div class="question q21">800</div>
-      <div class="question q22">800</div>
-      <div class="question q23">800</div>
-      <div class="question q24">800</div>
-      <!-- row 1000 -->
-      <div class="question q25">1000</div>
-      <div class="question q26">1000</div>
-      <div class="question q27">1000</div>
-      <div class="question q28">1000</div>
-      <div class="question q29">1000</div>
-      <div class="question q30">1000</div>
-    </div>
-
-    <!-- <section class="userinput"></section>
-    <section class="score"></section> -->
-    <!-- <footer>Footer Site Information</footer> -->
-  </main>
-</body>
+  <head>
+    <link rel="stylesheet" href="Styles/stylerounds.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeopardy-Round1</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="header">Jeopardy</h1>
+    </header>
+    <main>
+      <h1 id="title">Second Round</h1>
+      <section id="turn">
+        <h2>Player Turn</h2>
+      </section>
+      <!-- components needed for game board-->
+      <section class="gameboard">
+        <!-- Column 1 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R2200">200</button></div>
+          <div class="question"><button type="button" class="R2400">400</button></div>
+          <div class="question"><button type="button" class="R2600">600</button></div>
+          <div class="question"><button type="button" class="R2800">800</button></div>
+          <div class="question"><button type="button" class="R21000">1000</button></div>
+        </section>
+        <!-- Column 2 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R2200">200</button></div>
+          <div class="question"><button type="button" class="R2400">400</button></div>
+          <div class="question"><button type="button" class="R2600">600</button></div>
+          <div class="question"><button type="button" class="R2800">800</button></div>
+          <div class="question"><button type="button" class="R21000">1000</button></div>
+        </section>
+        <!-- Column 3 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R2200">200</button></div>
+          <div class="question"><button type="button" class="R2400">400</button></div>
+          <div class="question"><button type="button" class="R2600">600</button></div>
+          <div class="question"><button type="button" class="R2800">800</button></div>
+          <div class="question"><button type="button" class="R21000">1000</button></div>
+        </section>
+        <!-- Column 4 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R2200">200</button></div>
+          <div class="question"><button type="button" class="R2400">400</button></div>
+          <div class="question"><button type="button" class="R2600">600</button></div>
+          <div class="question"><button type="button" class="R2800">800</button></div>
+          <div class="question"><button type="button" class="R21000">1000</button></div>
+        </section>
+        <!-- Column 5 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R2200">200</button></div>
+          <div class="question"><button type="button" class="R2400">400</button></div>
+          <div class="question"><button type="button" class="R2600">600</button></div>
+          <div class="question"><button type="button" class="R2800">800</button></div>
+          <div class="question"><button type="button" class="R21000">1000</button></div>
+        </section>
+        <!-- Column 6 flex -->
+        <section class="column">
+          <div class="category"><p>Category</p></div>
+          <div class="question"><button type="button" class="R2200">200</button></div>
+          <div class="question"><button type="button" class="R2400">400</button></div>
+          <div class="question"><button type="button" class="R2600">600</button></div>
+          <div class="question"><button type="button" class="R2800">800</button></div>
+          <div class="question"><button type="button" class="R21000">1000</button></div>
+        </section>
+      </section>
+      <section class="userinput">
+        <input type="text" id="answer" name="answer" />
+        <button type="button" id="guess">Guess</button>
+        <button type="button" id="pass">Pass</button>
+      </section>
+      <section class="score">
+        <!-- Need to have functionality for gameplay once JavaScript added -->
+        <div id="player1">Player One Score: 0</div>
+        <div id="player2">Player Two Score: 0</div>
+      </section>
+      <form action="final-jeopardy.html">
+      <button id="next">Next Round</button>
+    </form>
+      <footer><p>Footer Site Information</p></footer>
+    </main>
+  </body>
 </html>
