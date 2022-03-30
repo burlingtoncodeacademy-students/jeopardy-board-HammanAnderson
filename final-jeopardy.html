@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="Styles/stylefinal.css">
+  <!-- Link to global page style sheet -->
+  <link rel="stylesheet" href="Styles/styleGlobal.css" />
+  <!-- Link to final page style sheet -->
+  <link rel="stylesheet" href="Styles/styleFinal.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- tab in browser will read Final Jeopardy -->
   <title>Final Jeopardy</title>
 </head>
 <body>
   <header>
-    <h1 id="header">Jeopardy</h1>
+    <!-- header same across all pages -->
+    <h1 class="header-text">Jeopardy</h1>
   </header>
   <main>
+    <!-- Each page has a h1 acting as page title-->
     <h1 id="title">Final Round</h1>
     <section class="playerturn">
     <h2>Player Turn</h2>
@@ -23,11 +29,13 @@
     <p>FINAL QUESITON</p>
   </section>
   <section class="userinput">
-    <input type="text" id="amount" name="amount"/>
-    <input type="text" id="answer" name="answer" />
-    <button type="submit" id="bet">BET</button>
+    <input type="text" placeholder="Amount" id="amount" name="amount"/>
+    <input type="text" placeholder="Answer" id="answer" name="answer" />
+    <button type="submit" class="blue-button" id="bet">BET</button>
   </section>
  </main>
-  <footer><p>Footer Site Information</p></footer>
+  <!--footer same across all pages -->
+  <footer><p>Created by: Gloria Anderson | 2022</p></footer>
+  <script src="index.js"></script>
 </body>
 </html>
