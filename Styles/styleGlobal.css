@@ -1,0 +1,102 @@
+/* ----------- Consistent Styling across entire App ----------- */
+
+/* Defines page positioning */
+html {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* Centered in browser. Defines page font family. Allows header to fill top of page */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Text aligned to center. Defines color and size */
+/* Jeopardy */
+header {
+  text-align: center;
+  width: 100%;
+  height: 8%;
+  background-color: grey;
+  border: 1px solid grey;
+}
+
+/* Defines color and size. Font family defined to Arial */
+.header-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+/* Defines h1 size and font-family across pages */
+h1 {
+  font-size: 2.5rem;
+  font-family: fantasy;
+}
+
+/* Defines h2 size */
+h2 {
+  font-size: 1.75rem;
+}
+
+/* main is centered with padding applied */
+main {
+  padding: 1.25vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Chose fixed position for footer. Footer is on page no matter size of browser window. 
+Defines color and text alignment. */
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 8%;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
+}
+
+/* Footer text becomes more centered */
+footer p{
+  margin-top: 1.5%;
+}
+
+/* class for all blue-buttons (play, next, bet). Defines font size, color and background color. */
+.blue-button {
+  background-color: rgb(23, 202, 217);
+  font-size: 1.25rem;
+  border-radius: 0.3vw;
+  border: none;
+  color: whitesmoke;
+}
+
+/* blue-button hover to let know button can be clicked */
+.blue-button:hover {
+  box-shadow: 0.5vw 0.5vw 0.5vw 0 darkgrey;
+}
+
+/* --------------- Index --------------- */
+
+/* Due to only have 2 unique pieces of conent, seemed cluttered in css folder to have on own page */
+/* Will not affect other pages */
+
+/* image of scientist and alien. Used open source image. */
+/* defining distance from h1 */
+img {
+  margin-top: 3%;
+}
+
+/* width, padding, and margin for play button */
+#play {
+  width: 8%;
+  padding: 0.5%;
+  margin-top: 4.25%;
+}
+
+/* --------------- Index --------------- */
+
+/* All pages except Index, have their own styling sheet as well. Did this to allow for clarity on the CSS and organization purposes */
