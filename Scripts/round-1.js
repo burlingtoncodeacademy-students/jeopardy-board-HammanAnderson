@@ -5,43 +5,42 @@ let jsonClues = require('./clues.json')
 // console.log(jsonClues)
 
 //Pull out category headings
-// let nature = jsonClues.placeholderQuestions[0].category
+let nature = jsonClues.placeholderQuestions[0].category
 // console.log(nature)
-// let animals = jsonClues.placeholderQuestions[11].category
+let animals = jsonClues.placeholderQuestions[11].category
 // console.log(animals)
-// let computers = jsonClues.placeholderQuestions[22].category
+let computers = jsonClues.placeholderQuestions[22].category
 // console.log(computers)
-// let mythology = jsonClues.placeholderQuestions[33].category
+let mythology = jsonClues.placeholderQuestions[33].category
 // console.log(mythology)
-// let history = jsonClues.placeholderQuestions[44].category
+let history = jsonClues.placeholderQuestions[44].category
 // console.log(history)
-// let general = jsonClues.placeholderQuestions[55].category
+let general = jsonClues.placeholderQuestions[55].category
 // console.log(general)
 
-// console.log(jsonClues)
+console.log(jsonClues)
 
  
-// Object.keys(jsonClues.placeholderQuestions).forEach(function(category){
-//     console.log(category)
-// })
+Object.keys(jsonClues.placeholderQuestions).forEach(function(category){
+    console.log(category)
+})
 
 //gives all key names
-// for (let key in jsonClues.placeholderQuestions){
-//     for (let key1 in jsonClues.placeholderQuestions[key]){
+for (let key in jsonClues.placeholderQuestions){
+    for (let key1 in jsonClues.placeholderQuestions[key]){
       
-//         Object.values(jsonClues.placeholderQuestions[key][key1])
+        Object.values(jsonClues.placeholderQuestions[key][key1])
 
-//         };
-//     }
+        };
+    }
 
-// console.log(Object.keys(jsonClues.placeholderQuestions[0]))
+console.log(Object.keys(jsonClues.placeholderQuestions[0]))
 
-// console.log(Object.values(jsonClues.placeholderQuestions[0]))
+console.log(Object.values(jsonClues.placeholderQuestions[0]))
 
 
-// //get new array with only category key values --- then use to populate value of category headers
+///get new array with only category key values --- then use to populate value of category headers
 
-// console.log(jsonClues)
 
 //get all categories
 function getCategories(arr){
@@ -79,13 +78,7 @@ console.log(questions)
 
 
 
-// //iterate through array of objects 
-
-
-
-
-
-
+//iterate through array of objects 
 
 
 //------------------------------------------------------//
@@ -100,18 +93,18 @@ console.log(questions)
 //-----------DOM Elements / Query Selectors-------------------------//
 
 // //players 
-// let player1 = document.getElementById ("player1")
-// let player2 = document.getElementById ("player2")
+let player1 = document.getElementById ("player1")
+let player2 = document.getElementById ("player2")
 
 // //Turn
-// let turn = document.getElementById("turn")
+let turn = document.getElementById("turn")
 
 // //User Input
-// let answerInput = document.getElementById("answer")
+let answerInput = document.getElementById("answer")
 
 // //Game Play 
 // //question 
-// let questionTile = document.querySelector()
+let questionTile = document.querySelector()
 
 
 // // //answer - successful (not sure where this should illustrate on page)
@@ -119,11 +112,11 @@ console.log(questions)
 
 // //Buttons
 // //guess
-// let guessButton = document.getElementById("guess")
+let guessButton = document.getElementById("guess")
 // //pass
-// let passButton = document.getElementById("pass")
+let passButton = document.getElementById("pass")
 // //next
-// let nextButton = document.getElementById("next")
+let nextButton = document.getElementById("next")
 
 // //---------------ROUND ONE PAGE -------------------------------//
 
@@ -133,20 +126,24 @@ console.log(questions)
 
 
 //     //I know score is a DOM element as well but I wasn't sure how to break apart my css/html code yet to reflect this.
-//     let player1Score = 0
-//     let player2Score = 0
+    let player1Score = 0
+    let player2Score = 0
 
 // //WHILE player1 and player2 score < 2500 || all tiles(questions)not asked:
 // //while(player1Score && player2 Score < 2500 || all click events on questions !occured)
 
-// while(player1Score < 2500 || player2Score < 2500 || )
+
+// ------------- Stuck on game play
+
+while(player1Score < 2500 || player2Score < 2500 || ){
 
 //     //next button is disabled
-//     nextButton.disabled = true
+    nextButton.disabled = true
 //     //guess button is disabled
-//     guessButton.disabled = true
+    guessButton.disabled = true
 //     //pass button is disabled
-//     passButton.disabled = true
+    passButton.disabled = true
+
 
 //WHEN current player chooses question tile on gameboard(addEventListener)(onClick event)
 

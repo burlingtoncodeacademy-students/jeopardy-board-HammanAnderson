@@ -2,14 +2,16 @@
 
 /* Defines page positioning */
 html {
-  position: relative;
-  min-height: 100%;
-  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 /* Centered in browser. Defines page font family. Allows header to fill top of page */
 body {
+  position: relative;
   margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,57 +23,71 @@ header {
   height: 8%;
   background-color: grey;
   border: 1px solid grey;
+  margin-top: 0;
 }
 
 /* Defines color and size. Font family defined to Arial */
 .header-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   color: whitesmoke;
 }
 
 /* Defines h1 size and font-family across pages */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25vw;
   font-family: fantasy;
+}
+/* Animation Fade In and Color Change of Title */
+.fade-in {
+  animation: fadeIn 5s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    color: rgb(0, 251, 255);
+  }
+  to {
+    opacity: 1;
+    color: black;
+  }
 }
 
 /* Defines h2 size */
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5vw;
 }
 
 /* main is centered with padding applied */
 main {
-  padding: 1.25vw;
-  box-sizing: border-box;
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1vw;
 }
 
 /* Chose fixed position for footer. Footer is on page no matter size of browser window. 
 Defines color and text alignment. */
 footer {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
-  height: 8%;
-  width: 100%;
-  text-align: center;
+  left: 0;
+  padding: 2vw;
   background-color: grey;
-}
-
-/* Footer text becomes more centered */
-footer p{
-  margin-top: 1.5%;
+  text-align: center;
+  font-size: 1vw;
 }
 
 /* class for all blue-buttons (play, next, bet). Defines font size, color and background color. */
 .blue-button {
   background-color: rgb(23, 202, 217);
-  font-size: 1.25rem;
+  font-size: 1.25vw;
   border-radius: 0.3vw;
   border: none;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 /* blue-button hover to let know button can be clicked */
@@ -92,11 +108,77 @@ img {
 
 /* width, padding, and margin for play button */
 #play {
-  width: 8%;
+  width: 5%;
   padding: 0.5%;
   margin-top: 4.25%;
+  font-size: 1vw;
 }
 
 /* --------------- Index --------------- */
 
 /* All pages except Index, have their own styling sheet as well. Did this to allow for clarity on the CSS and organization purposes */
+
+/* --------------- Mobile Responsive Changes --------------- */
+/* Checked values on Responsively app and by adjusting browser */
+/* Increased font sizing as screen size decreases as well as form and button sizes */
+
+/* Ipad view */
+@media only screen and (max-width: 800px) {
+  img {
+    margin-top: 3%;
+    max-width: 80%;
+    max-height: 40%;
+  }
+
+  /* width, padding, and margin for play button */
+  #play {
+    width: 12%;
+    padding: 1%;
+    margin-top: 4.25%;
+    font-size: 3vw;
+  }
+  .header-text {
+    font-size: 6vw;
+  }
+  h1 {
+    font-size: 5vw;
+    font-family: fantasy;
+  }
+  footer {
+    font-size: 2.25vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+}
+
+/* Phone/mobile view */
+/* Increased font sizing as screen size decreases as well as form and button sizes */
+@media only screen and (max-width: 425px) {
+  img {
+    margin-top: 3%;
+    width: 70%;
+    height: 10%;
+  }
+
+  /* width, padding, and margin for play button */
+  #play {
+    width: 20%;
+    padding: 1%;
+    margin-top: 4.25%;
+    font-size: 5vw;
+  }
+  .header-text {
+    font-size: 10vw;
+  }
+  h1 {
+    font-size: 10vw;
+    font-family: fantasy;
+  }
+  footer {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+}
