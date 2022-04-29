@@ -1,0 +1,134 @@
+/* -------------Final Round(Jeopardy) Styling----------------------*/
+
+/* Define format, coloring and sizing of final category header */
+h3 {
+  border: 1px solid rgb(16, 128, 138);
+  background-color: rgb(23, 202, 217);
+  width: 50%;
+  margin: 1vw auto;
+  height: 2.25vw;
+  padding-top: 1vw;
+  color: rgb(37, 37, 37);
+  font-size: 1.15vw;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+/* Changing colors through animation */
+@keyframes slidein {
+  from {
+    background-color: rgb(16, 128, 138);
+    color: white;
+  }
+  to {
+    background-color: rgb(23, 202, 217);
+    color: black;
+  }
+}
+
+/* Define format, coloring and sizing of final question box */
+.finalquestion {
+  border: 1px solid rgb(23 202 217);
+  margin: 0 auto;
+  width: 50%;
+  height: 12vw;
+  font-size: 1vw;
+}
+
+/* Define format and sizing of final answer form inputs */
+.userinput {
+  position: relative;
+  display: grid;
+  width: 20%;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+  padding-top: 2%;
+  font-size: 1vw;
+}
+
+/* Define sizing and format of final bet button */
+#bet {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 1%;
+  padding: 1%;
+  font-size: 1vw;
+}
+
+/* Format changes for input */
+#amount,
+#answer {
+  margin: 2%;
+  padding: 1%;
+  font-size: 1vw;
+}
+
+/* Disabling of button -- need to ensure JavaScript provides functionality */
+#bet[disabled] {
+  cursor: not-allowed;
+}
+
+/* --------------- Mobile Responsive Changes --------------- */
+/* Checked values on Responsively app and by adjusting browser */
+/* Increased font sizing as screen size decreases as well as form and button sizes */
+
+/* Ipad view */
+@media only screen and (max-width: 800px) {
+  /* increase question box size */
+  .finalquestion {
+    height: 30vw;
+    font-size: 2vw;
+  }
+  /* increase font size */
+  h3 {
+    height: 4.5vw;
+    font-size: 2.75vw;
+  }
+  /* increase form inputs */
+  #amount,
+  #answer {
+    font-size: 2.25vw;
+  }
+  /* increase contaner width */
+  .userinput {
+    width: 40%;
+  }
+  /* increase button container size and font size */
+  #bet {
+    margin-top: 2%;
+    font-size: 2.25vw;
+  }
+}
+/* Phone/mobile view */
+/* Increased font sizing as screen size decreases as well as form and button sizes */
+/* Question Box increased for design */
+@media only screen and (max-width: 425px) {
+  /* increase question box size */
+  .finalquestion {
+    height: 60vw;
+    font-size: 3vw;
+    width: 60vw;
+  }
+  /* increase font size */
+  h3 {
+    height: 6vw;
+    font-size: 4.25vw;
+    width: 60vw;
+  }
+  /* increase form inputs */
+  #amount,
+  #answer {
+    font-size: 3.5vw;
+  }
+  /* increase contaner width */
+  .userinput {
+    width: 50%;
+  }
+  /* increase button container size and font size */
+  #bet {
+    margin-top: 2%;
+    font-size: 4vw;
+    width: 13vw;
+  }
+}
