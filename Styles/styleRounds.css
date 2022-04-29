@@ -27,6 +27,19 @@
   font-size: 1.15vw;
   color: rgb(37, 37, 37);
 }
+/* Animation size change on Category Text */
+.category {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    font-size: 0.5vw;
+  }
+  to {
+    font-size: 1.15vw;
+  }
+}
 
 /* Define size and text alignment of game board questions */
 .question {
@@ -116,7 +129,7 @@ button {
   top: 70%;
   font-size: 1vw;
   padding: 0.5vw;
-  margin-bottom: 1vw;
+  margin-bottom: 3vw;
 }
 
 /* --------------- Mobile Responsive Changes --------------- */

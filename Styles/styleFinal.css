@@ -10,6 +10,19 @@ h3 {
   padding-top: 1vw;
   color: rgb(37, 37, 37);
   font-size: 1.15vw;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+/* Changing colors through animation */
+@keyframes slidein {
+  from {
+    background-color: rgb(16, 128, 138);
+    color: white;
+  }
+  to {
+    background-color: rgb(23, 202, 217);
+    color: black;
+  }
 }
 
 /* Define format, coloring and sizing of final question box */
